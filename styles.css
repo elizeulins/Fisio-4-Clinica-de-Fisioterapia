@@ -108,6 +108,10 @@ h3 {
     float: left;
 }
 
+a {
+    color: aqua;
+}
+
 #area-lateral {
     width: 240px;
     float: right;
