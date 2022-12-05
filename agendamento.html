@@ -1,0 +1,82 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="imagens/favicon.png">
+    <title>Fisio 4 - Agendamento</title>
+</head>
+<body>
+
+    <div id="area-cabecalho">
+        <div id="area-logo">
+            <img id="logo-fisio" src="imagens/logoWHITE-fisio4.png">
+        </div>
+
+        <nav id="area-menu">
+            <a href="index.html">Página Inicial</a>
+            <a href="profissionais.html">Profissionais</a>
+            <a href="">Agendamento</a>
+        </nav>
+    </div>
+
+    <div id="container"><!--INCIO CONTAINER-->
+
+        <div id="forms">
+
+            <form action=""><!--INICIO FORMS-->
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" class="formInput" placeholder="Digite seu nome completo" required><br><br>
+
+                <label for="idade">Idade:</label><br>
+                <input type="number" name="idade" id="idade" class="formInput" placeholder="Digite sua idade" required> (anos)<br><br>
+
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" name="cidade" id="cidade" class="formInput" placeholder="Digite sua cidade" required><br><br>
+
+                <label for="data">Escolha a data:</label><br>
+                <input type="date" name="data" id="data" class="formInput" min=2022-12-05><br><br>
+
+                <label for="horario">Horário:</label><br>
+                <input type="time" name="horario" id="horario" class="formInput" value="09:00"><br><br>
+
+                <label for="procedimento">Escolha o procedimento:</label><br>
+                <select name="procedimento" id="proced" class="formInput">
+                    <option value="0">Selecione o procedimento</option>
+                    <option value="Limpeza">1 - Massagem Facial, (Valor: R$100,00)</option>
+                    <option value="Limpeza">2 - Drenagem Linfática, (Valor: R$120,00)</option>
+                    <option value="Limpeza">3 - Massagem Antistress, (Valor: R$110,00)</option>
+                    <option value="Limpeza">4 - Criolipólise, (Valor: R$120,00)</option>
+                    <option value="Limpeza">5 - Lipo Enzimática, (Valor: R$180,00)</option>
+                </select><br><br>
+
+            </form><!--FIM FORMS-->
+
+        <div id="botoes">
+            <input type="button" value="Agendar!" id="buttonAgendar">
+            <input type="button" value="Cancelar!" id="buttonCancelar">
+        </div>
+
+        </div><!--div forms-->
+
+    </div><!--FIM CONTAINER-->
+
+    <footer class="rodape-agendamento">
+        
+        <article class="texto-rodape">
+            <b>Nossa Localização:</b> <br><br>
+            Rua José Gomes Alves. s/n <br>
+            Centro, Patos-PB <br>
+            CEP: 58123-000 <br>
+        </article>
+
+        <article class="texto-rodape">
+            <b>Entre em contato conosco:</b><br><br>
+            <p>(83)91122-3344</p>
+        </article>
+    </footer>
+    
+    
+</body>
+</html>

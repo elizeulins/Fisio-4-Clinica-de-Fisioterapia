@@ -1,0 +1,286 @@
+/*STYLES DE INDEX*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {  /*definindo as cores padrao pra todo o site a serem aplicadas*/
+    --primary-color: black;
+    --secundary-color: gray;
+    --tertiary-color: white;
+}
+
+body {
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: rgb(216, 216, 216) url('imagens/fundo.png');
+}
+
+#area-cabecalho {
+    background-color: var(--primary-color);
+    height: 140px;
+    padding: 5px;
+    text-align: center;
+}
+
+#logo-fisio {
+    width: 220px;
+    height: 100px;
+    margin-top: 5px;
+}
+
+#area-menu {
+    padding-top: 8px;
+}
+
+/*formatacao do menu*/
+
+a { /*tirando o sublinhado dos links*/
+    text-decoration: none;
+    margin-top: 3px;
+}
+
+a:link, a:visited { /*mudar cor do texto dos links*/
+    color: var(--tertiary-color);
+    padding: 3px 60px;
+}
+
+a:hover { /*mudar cor do background ao passar o mouse por cima do texto dos links, e espacamento */
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+/*STYLES DE PAGINA INICIAL*/
+
+/*formatacao dos titulos*/
+
+h1 {
+    background: var(--secundary-color);
+    color: var(--tertiary-color);
+    width: 660px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px 10px 0px 0px;
+    height: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Valores procedimentos*/
+#valor { 
+    color: var(--secundary-color);
+    font-size: 1.6em;
+    margin-left: 410px;
+}
+
+
+/*formatacao geral*/
+
+.postagem-lateral {
+    padding: 5px;
+    font-size:medium;
+}
+
+#area-principal {
+    width: 920px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#area-postagens, #area-lateral {
+    background: var(--secundary-color);
+}
+
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
+#area-lateral {
+    width: 240px;
+    float: right;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--tertiary-color);
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: var(--tertiary-color);
+}
+
+.conteudo-lateral {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#borderImg {
+    border-radius: 15px;
+    width: 500px;
+    height: 400px;
+}
+
+#imglocal {
+    width: 40px;
+    float: left;
+}
+
+#rodape {
+    clear: both/*remover o fluxo dos elementos flutuantes*/;
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/*STYLES DE PAGINA INICIAL*/
+
+/*STYLES DE AGENDAMENTO*/
+
+#container {
+    display: grid;
+    place-items: center;
+    background: var(--tertiary-color);
+    width: 920px;
+    margin: 0 auto;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#forms {
+    background: var(--secundary-color);
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    color: var(--tertiary-color);
+    box-shadow:0 0 5px var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.formInput {
+    padding: 10px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: 5px;
+}
+/*ajeitar a borda preta ao redor dos input*/
+.formInput:focus {
+    border: 3px solid black;
+    outline:none;
+}
+
+#botoes {
+    text-align: center;
+}
+#buttonAgendar, #buttonCancelar {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+#buttonAgendar:hover {
+    background-color: rgb(172, 170, 170);
+    color: var(--tertiary-color);
+}
+
+#buttonCancelar:hover {
+    background-color: rgb(172, 170, 170);
+    color: var(--tertiary-color);
+}
+
+.rodape-agendamento {
+    background: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+.texto-rodape {
+    color: white;
+    width: 33%;
+    text-align: center;
+    padding: 15px 0px;
+    font-size: 1.1em;
+}
+
+/*STYLES DE AGENDAMENTO*/
+
+/*STYLES DE PROFISSIONAIS*/
+
+#area-profissionais {
+    background: var(--tertiary-color);
+    width: 920px;
+    margin: 0 auto;;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+#foto-profissional1 {
+    width: 450px;
+    background-color: var(--secundary-color);
+    border-radius: 20px 0px 0px 0px;
+}
+
+#foto-profissional2 {
+    width: 450px;
+    background-color: var(--secundary-color);
+    border-radius: 0px 0px 0px 20px;
+}
+
+#texto-foto {
+    width: 450px;
+    height: 450px;
+    float: right;
+    border-radius: 20px;
+}
+
+#texto-foto h2 { /*nome medico*/
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.8em;
+}
+
+#texto-foto p { /*profissão*/
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+hr {
+    width: 469px;
+    margin-left: -20px;
+    border: 1px solid var(--primary-color);
+}
+
+#linha_separar {
+    width: 910px;
+    margin-left: 0px;
+    border: 5px solid var(--primary-color);
+}
+
+#texto-foto ul { /*especialidades*/
+    padding: 15px 30px;
+    font-size: 1.4em;
+}
+
+/*STYLES DE PROFISSIONAIS*/
