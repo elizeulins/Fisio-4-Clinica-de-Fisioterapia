@@ -25,7 +25,7 @@
 
         <div id="forms">
 
-            <form action=""><!--INICIO FORMS-->
+            <form action="https://formsubmit.co/elizeulins40@gmail.com" method="post"><!--INICIO FORMS-->
                 <label for="nome">Nome:</label><br>
                 <input type="text" name="nome" id="nome" class="formInput" placeholder="Digite seu nome completo" required><br><br>
 
@@ -36,13 +36,13 @@
                 <input type="text" name="cidade" id="cidade" class="formInput" placeholder="Digite sua cidade" required><br><br>
 
                 <label for="data">Escolha a data:</label><br>
-                <input type="date" name="data" id="data" class="formInput" min=2022-12-05><br><br>
+                <input type="date" name="data" id="data" class="formInput" min=2022-12-05 required><br><br>
 
                 <label for="horario">Horário:</label><br>
-                <input type="time" name="horario" id="horario" class="formInput" value="09:00"><br><br>
+                <input type="time" name="horario" id="horario" class="formInput" value="09:00" required><br><br>
 
                 <label for="procedimento">Escolha o procedimento:</label><br>
-                <select name="procedimento" id="proced" class="formInput">
+                <select name="procedimento" id="proced" class="formInput" required>
                     <option value="0">Selecione o procedimento</option>
                     <option value="Limpeza">1 - Massagem Facial, (Valor: R$100,00)</option>
                     <option value="Limpeza">2 - Drenagem Linfática, (Valor: R$120,00)</option>
@@ -51,12 +51,15 @@
                     <option value="Limpeza">5 - Lipo Enzimática, (Valor: R$180,00)</option>
                 </select><br><br>
 
-            </form><!--FIM FORMS-->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
 
-        <div id="botoes">
-            <input type="button" value="Agendar!" id="buttonAgendar">
-            <input type="button" value="Cancelar!" id="buttonCancelar">
-        </div>
+                <div id="botoes">
+                    <input type="submit" value="Agendar!" id="buttonAgendar">
+                    <input type="button" value="Cancelar!" id="buttonCancelar">
+                </div>
+
+            </form><!--FIM FORMS-->
 
         </div><!--div forms-->
 
